@@ -76,26 +76,26 @@ namespace SlimUI.ModernMenu{
 
 			// check full screen
 			if(Screen.fullScreen == true){
-				fullscreentext.GetComponent<TMP_Text>().text = "on";
+				fullscreentext.GetComponent<TMP_Text>().text = "Açık";
 			}
 			else if(Screen.fullScreen == false){
-				fullscreentext.GetComponent<TMP_Text>().text = "off";
+				fullscreentext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 
 			// check hud value
 			if(PlayerPrefs.GetInt("ShowHUD")==0){
-				showhudtext.GetComponent<TMP_Text>().text = "off";
+				showhudtext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 			else{
-				showhudtext.GetComponent<TMP_Text>().text = "on";
+				showhudtext.GetComponent<TMP_Text>().text = "Açık";
 			}
 
 			// check tool tip value
 			if(PlayerPrefs.GetInt("ToolTips")==0){
-				tooltipstext.GetComponent<TMP_Text>().text = "off";
+				tooltipstext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 			else{
-				tooltipstext.GetComponent<TMP_Text>().text = "on";
+				tooltipstext.GetComponent<TMP_Text>().text = "Açık";
 			}
 
 			// check shadow distance/enabled
@@ -148,34 +148,34 @@ namespace SlimUI.ModernMenu{
 
 			// check vsync
 			if(QualitySettings.vSyncCount == 0){
-				vsynctext.GetComponent<TMP_Text>().text = "off";
+				vsynctext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 			else if(QualitySettings.vSyncCount == 1){
-				vsynctext.GetComponent<TMP_Text>().text = "on";
+				vsynctext.GetComponent<TMP_Text>().text = "Açık";
 			}
 
 			// check mouse inverse
 			if(PlayerPrefs.GetInt("Inverted")==0){
-				invertmousetext.GetComponent<TMP_Text>().text = "off";
+				invertmousetext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 			else if(PlayerPrefs.GetInt("Inverted")==1){
-				invertmousetext.GetComponent<TMP_Text>().text = "on";
+				invertmousetext.GetComponent<TMP_Text>().text = "Açık";
 			}
 
 			// check motion blur
 			if(PlayerPrefs.GetInt("MotionBlur")==0){
-				motionblurtext.GetComponent<TMP_Text>().text = "off";
+				motionblurtext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 			else if(PlayerPrefs.GetInt("MotionBlur")==1){
-				motionblurtext.GetComponent<TMP_Text>().text = "on";
+				motionblurtext.GetComponent<TMP_Text>().text = "Açık";
 			}
 
 			// check ambient occlusion
 			if(PlayerPrefs.GetInt("AmbientOcclusion")==0){
-				ambientocclusiontext.GetComponent<TMP_Text>().text = "off";
+				ambientocclusiontext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 			else if(PlayerPrefs.GetInt("AmbientOcclusion")==1){
-				ambientocclusiontext.GetComponent<TMP_Text>().text = "on";
+				ambientocclusiontext.GetComponent<TMP_Text>().text = "Açık";
 			}
 
 			// check texture quality
@@ -210,10 +210,10 @@ namespace SlimUI.ModernMenu{
 			Screen.fullScreen = !Screen.fullScreen;
 
 			if(Screen.fullScreen == true){
-				fullscreentext.GetComponent<TMP_Text>().text = "on";
+				fullscreentext.GetComponent<TMP_Text>().text = "Açık";
 			}
 			else if(Screen.fullScreen == false){
-				fullscreentext.GetComponent<TMP_Text>().text = "off";
+				fullscreentext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 		}
 
@@ -239,11 +239,11 @@ namespace SlimUI.ModernMenu{
 		public void ShowHUD (){
 			if(PlayerPrefs.GetInt("ShowHUD")==0){
 				PlayerPrefs.SetInt("ShowHUD",1);
-				showhudtext.GetComponent<TMP_Text>().text = "on";
+				showhudtext.GetComponent<TMP_Text>().text = "Açık";
 			}
 			else if(PlayerPrefs.GetInt("ShowHUD")==1){
 				PlayerPrefs.SetInt("ShowHUD",0);
-				showhudtext.GetComponent<TMP_Text>().text = "off";
+				showhudtext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 		}
 
@@ -251,22 +251,22 @@ namespace SlimUI.ModernMenu{
 		public void MobileSFXMute (){
 			if(PlayerPrefs.GetInt("Mobile_MuteSfx")==0){
 				PlayerPrefs.SetInt("Mobile_MuteSfx",1);
-				mobileSFXtext.GetComponent<TMP_Text>().text = "on";
+				mobileSFXtext.GetComponent<TMP_Text>().text = "Açık";
 			}
 			else if(PlayerPrefs.GetInt("Mobile_MuteSfx")==1){
 				PlayerPrefs.SetInt("Mobile_MuteSfx",0);
-				mobileSFXtext.GetComponent<TMP_Text>().text = "off";
+				mobileSFXtext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 		}
 
 		public void MobileMusicMute (){
 			if(PlayerPrefs.GetInt("Mobile_MuteMusic")==0){
 				PlayerPrefs.SetInt("Mobile_MuteMusic",1);
-				mobileMusictext.GetComponent<TMP_Text>().text = "on";
+				mobileMusictext.GetComponent<TMP_Text>().text = "Açık";
 			}
 			else if(PlayerPrefs.GetInt("Mobile_MuteMusic")==1){
 				PlayerPrefs.SetInt("Mobile_MuteMusic",0);
-				mobileMusictext.GetComponent<TMP_Text>().text = "off";
+				mobileMusictext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 		}
 
@@ -274,11 +274,11 @@ namespace SlimUI.ModernMenu{
 		public void ToolTips (){
 			if(PlayerPrefs.GetInt("ToolTips")==0){
 				PlayerPrefs.SetInt("ToolTips",1);
-				tooltipstext.GetComponent<TMP_Text>().text = "on";
+				tooltipstext.GetComponent<TMP_Text>().text = "Açık";
 			}
 			else if(PlayerPrefs.GetInt("ToolTips")==1){
 				PlayerPrefs.SetInt("ToolTips",0);
-				tooltipstext.GetComponent<TMP_Text>().text = "off";
+				tooltipstext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 		}
 
@@ -353,55 +353,55 @@ namespace SlimUI.ModernMenu{
 		public void vsync (){
 			if(QualitySettings.vSyncCount == 0){
 				QualitySettings.vSyncCount = 1;
-				vsynctext.GetComponent<TMP_Text>().text = "on";
+				vsynctext.GetComponent<TMP_Text>().text = "Açık";
 			}
 			else if(QualitySettings.vSyncCount == 1){
 				QualitySettings.vSyncCount = 0;
-				vsynctext.GetComponent<TMP_Text>().text = "off";
+				vsynctext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 		}
 
 		public void InvertMouse (){
 			if(PlayerPrefs.GetInt("Inverted")==0){
 				PlayerPrefs.SetInt("Inverted",1);
-				invertmousetext.GetComponent<TMP_Text>().text = "on";
+				invertmousetext.GetComponent<TMP_Text>().text = "Açık";
 			}
 			else if(PlayerPrefs.GetInt("Inverted")==1){
 				PlayerPrefs.SetInt("Inverted",0);
-				invertmousetext.GetComponent<TMP_Text>().text = "off";
+				invertmousetext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 		}
 
 		public void MotionBlur (){
 			if(PlayerPrefs.GetInt("MotionBlur")==0){
 				PlayerPrefs.SetInt("MotionBlur",1);
-				motionblurtext.GetComponent<TMP_Text>().text = "on";
+				motionblurtext.GetComponent<TMP_Text>().text = "Açık";
 			}
 			else if(PlayerPrefs.GetInt("MotionBlur")==1){
 				PlayerPrefs.SetInt("MotionBlur",0);
-				motionblurtext.GetComponent<TMP_Text>().text = "off";
+				motionblurtext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 		}
 
 		public void AmbientOcclusion (){
 			if(PlayerPrefs.GetInt("AmbientOcclusion")==0){
 				PlayerPrefs.SetInt("AmbientOcclusion",1);
-				ambientocclusiontext.GetComponent<TMP_Text>().text = "on";
+				ambientocclusiontext.GetComponent<TMP_Text>().text = "Açık";
 			}
 			else if(PlayerPrefs.GetInt("AmbientOcclusion")==1){
 				PlayerPrefs.SetInt("AmbientOcclusion",0);
-				ambientocclusiontext.GetComponent<TMP_Text>().text = "off";
+				ambientocclusiontext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 		}
 
 		public void CameraEffects (){
 			if(PlayerPrefs.GetInt("CameraEffects")==0){
 				PlayerPrefs.SetInt("CameraEffects",1);
-				cameraeffectstext.GetComponent<TMP_Text>().text = "on";
+				cameraeffectstext.GetComponent<TMP_Text>().text = "Açık";
 			}
 			else if(PlayerPrefs.GetInt("CameraEffects")==1){
 				PlayerPrefs.SetInt("CameraEffects",0);
-				cameraeffectstext.GetComponent<TMP_Text>().text = "off";
+				cameraeffectstext.GetComponent<TMP_Text>().text = "Kapalı";
 			}
 		}
 
